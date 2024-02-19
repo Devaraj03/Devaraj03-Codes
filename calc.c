@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include<stdlib.h>
+void myfunc(int a,int b,int d,char c)
+{
+    printf("\ncome to the calc...\n");
+    if (c=='+')
+    {
+        d=a+b;
+        printf("the added value is:%d",d);
+    }
+    else if (c=='-')
+    {
+        d=a-b;
+        printf("the minus value is:%d",d);
+    }
+    else if (c=='*')
+    {
+        d=a*b;
+        printf("the mavalue is:%d",d);
+    }
+    else if (c=='/')
+    {
+        d=a/b;
+        printf("the dialue is:%d",d);
+    }
+    else
+    {
+        printf("nothing happen...");
+    }
+}
+int main() 
+{   int a;
+    int b;
+    char c;
+    printf("enter the a value:");
+    scanf("%d",&a);
+    printf("enter the b value:");
+    scanf("%d",&b);
+    printf("enter the symbol:");
+    c=getchar();
+    scanf("%c",&c);
+    myfunc(a,b,"",c);
+    return 0;
+}
