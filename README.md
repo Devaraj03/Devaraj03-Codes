@@ -1,2 +1,2 @@
-# Devaraj03-Codes
-I'm work out codes
+# Devaraj03-C codes
+I'm worked this codes
